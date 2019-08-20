@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:700i&display=swap" rel="stylesheet">
+    <title>Верстка</title>
+</head>
+<body>
+<div class="container">
+    <div class="place">
+        <label for="place">Место или название отеля</label>
+        <div class="wrap">
+            <img src="Эллипс%202.png" alt="">
+            <input type="text" name="place" id="place" placeholder="Введите здесь место">
+        </div>
+    </div>
+
+    <div class="entry">
+        <label for="entryDate">Заезд</label>
+        <div class="wrap">
+            <img src="Calendar.png" alt="">
+            <input value="2019-08-20" type="date" id="entryDate">
+        </div>
+    </div>
+
+    <div class="leaving">
+        <label for="leavingDate">Выезд</label>
+        <input type="date" value="2019-08-25" id="leavingDate">
+    </div>
+
+    <div class="group">
+        <div class="wrap">
+            <label for="room">Номерa</label>
+            <input type="number" id="room" value="1" min="1" max="4">
+            <div class="arrows">
+                <div class="arrowUp"></div>
+                <div class="arrowDown"></div>
+            </div>
+        </div>
+        <div class="wrap">
+            <label for="adults">Взрослые</label>
+            <input type="number" id="adults" value="2" min="1" max="6">
+            <div class="arrows">
+                <div class="arrowUpAdults"></div>
+                <div class="arrowDownAdults"></div>
+            </div>
+        </div>
+        <div class="wrap">
+            <label for="children">Дети</label>
+            <input type="number" id="children" value="1" min="0" max="8">
+            <div class="arrows">
+                <div class="arrowUpChildren"></div>
+                <div class="arrowDownChildren"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+            <div class="plusBtn"></div>
+            <button class="findBtn">Найти</button>
+    </div>
+    <div class="clear"></div>
+
+</div>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
